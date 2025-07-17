@@ -113,38 +113,6 @@ An intelligent recommendation system built with Machine Learning and deployed us
 - **📚 Content-Based**: Recommends based on content similarity (genres, cast, etc.)
 - **🤝 Collaborative**: Recommends based on user behavior patterns
 
-## 🚀 Cloud Deployment
-
-### AWS ECS Deployment
-
-1. **Push to ECR**
-   ```bash
-   # Build and tag for ECR
-   docker build -t netflix-ai-app .
-   docker tag netflix-ai-app:latest <aws-account-id>.dkr.ecr.<region>.amazonaws.com/netflix-ai-app:latest
-   
-   # Push to ECR
-   docker push <aws-account-id>.dkr.ecr.<region>.amazonaws.com/netflix-ai-app:latest
-   ```
-
-2. **Deploy to ECS**
-   - Create ECS cluster
-   - Define task definition
-   - Create service with load balancer
-
-### Streamlit Cloud Deployment
-
-1. Push code to GitHub
-2. Connect repository to Streamlit Cloud
-3. Configure environment variables
-4. Deploy automatically
-
-## 📊 Performance
-
-- **Model Loading**: ~30 seconds (cached after first load)
-- **Recommendation Generation**: <2 seconds
-- **Memory Usage**: ~2GB RAM
-- **Concurrent Users**: 50+ (depending on server specs)
 
 ## 🤝 Contributing
 
@@ -154,20 +122,3 @@ An intelligent recommendation system built with Machine Learning and deployed us
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙋‍♂️ Support
-
-For support and questions:
-- Create an issue in this repository
-- Contact: [your-email@example.com]
-
-## 🔮 Future Enhancements
-
-- [ ] Real-time model updates
-- [ ] User authentication and personalization
-- [ ] A/B testing framework
-- [ ] Mobile-responsive design
-- [ ] API endpoints for external integrations
